@@ -1,4 +1,9 @@
+
+import equipment.EquipmentAttack;
+import equipment.EquipmentDefence;
+
 import java.util.Objects;
+
 
 public class Player {
     /**

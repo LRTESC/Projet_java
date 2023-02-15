@@ -1,8 +1,11 @@
+import equipment.EquipmentAttack;
+import equipment.EquipmentDefence;
+
 import java.util.Scanner;
 
 public class Menu {
-    private Game game;
-    private Scanner scanner;
+    private  Game game;
+    private  Scanner scanner;
     private boolean exit;
 
     public Menu(Game game, Scanner scanner) {
@@ -17,7 +20,8 @@ public class Menu {
             if (this.game.hasPlayer()) {
                 System.out.println("1 - Update player");
                 System.out.println("2 - Delete player");
-                System.out.println("3 - Run game");
+                System.out.println("3 -Show player");
+                System.out.println("4 - Run game");
             } else {
                 System.out.println("1 - Create player");
             }
@@ -44,18 +48,31 @@ public class Menu {
                     }
                 }
                 case 3 -> {
-                    // we check that there's already a player defined
-                    // FIXME we should check if the game is ready to start
-                    //  (delegate that responsibility to the game object)
                     if (this.game.hasPlayer()) {
+                        System.out.println(this.game.getPlayer().toString());
+                    }
+                }
+                case 4 -> {
+                    // We check that there's already a player defined
+                    // FIXME we should check if the game is ready to start(delegate that responsibility to the game object)
+                    if (this.game.hasPlayer()){
                         // The we run the game
                         this.game.run();
+                        // Then we run the game
+                        this.startGame();
                     }
                 }
                 // The user which to exist (we break the main loop)
                 case 9 -> this.exit = true;
             }
         }
+    }
+    private void startGame(){
+        while(!this.game.isFinished()){
+            this.game.playTurn();
+        }
+        // The game is finish we create a new one and return to the main menu
+        this.game = new Game();
     }
 
     /**
@@ -65,6 +82,9 @@ public class Menu {
      */
     private void updatePlayer(Player player) {
         System.out.println("TODO");
+        System.out.println("Type new name : ");
+        String name = this.scanner.nextLine();
+        player.setName(name);
     }
 
     /**
@@ -88,13 +108,17 @@ public class Menu {
             switch (choice) {
                 case 1 -> {
                     correct = true;
-                    player = new Player(name, 10, 10, "warrior",
-                            new EquipmentAttack("weapon"), new EquipmentDefence("sheild"));
+                    EquipmentAttack sword = new EquipmentAttack("Training sword");
+                    EquipmentDefence armor = new EquipmentDefence("Training armor");
+                    player = new Player(name,10,10,"warrior", sword, armor);
+
                 }
                 case 2 -> {
                     correct = true;
-                    player = new Player(name, 6, 15, "wizzard",
-                            new EquipmentAttack("sort"), new EquipmentDefence("philtre"));
+                    EquipmentAttack spell = new EquipmentAttack("Spark");
+                    EquipmentDefence armor = new EquipmentDefence("Cloak");
+                    player = new Player(name, 6,15,"wizzard",spell,armor);
+
                 }
                 default -> correct = false;
             }

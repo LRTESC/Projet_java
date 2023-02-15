@@ -1,3 +1,5 @@
+package equipment;
+
 import java.util.Objects;
 
 public class EquipmentDefence {
@@ -18,7 +20,7 @@ public class EquipmentDefence {
 
     @Override
     public String toString() {
-        return "EquipmentDefence{" +
+        return "equipment.EquipmentDefence{" +
                 "name='" + name + '\'' +
                 '}';
     }
