@@ -1,3 +1,6 @@
+import character.Player;
+import character.Warrior;
+import character.Wizzard;
 import equipment.EquipmentAttack;
 import equipment.EquipmentDefence;
 
@@ -110,14 +113,14 @@ public class Menu {
                     correct = true;
                     EquipmentAttack sword = new EquipmentAttack("Training sword");
                     EquipmentDefence armor = new EquipmentDefence("Training armor");
-                    player = new Player(name,10,10,"warrior", sword, armor);
+                    player = new Warrior(name,10,10,"warrior", sword, armor);
 
                 }
                 case 2 -> {
                     correct = true;
                     EquipmentAttack spell = new EquipmentAttack("Spark");
                     EquipmentDefence armor = new EquipmentDefence("Cloak");
-                    player = new Player(name, 6,15,"wizzard",spell,armor);
+                    player = new Wizzard(name, 6,15,"wizzard",spell,armor);
 
                 }
                 default -> correct = false;

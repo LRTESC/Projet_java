@@ -1,3 +1,5 @@
+import character.Player;
+
 /**
  * Hold details about the current game
  */

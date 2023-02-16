@@ -1,11 +1,15 @@
+package character;
 
 import equipment.EquipmentAttack;
 import equipment.EquipmentDefence;
 
 import java.util.Objects;
 
-
-public class Player {
+/**
+ * déclaration de abstract class player donc je dois changer mes player
+ * par "Warrior" et "Wizzard" dans mon createPlayer car on ne peut plus les instancier en abstract.
+ */
+public abstract class Player {
     /**
      * Name of the player
      */
@@ -23,7 +27,7 @@ public class Player {
      * @param equipmentAttack
      * @param equipmentDefence
      */
-    public Player(String name, int life, int attack, String type, EquipmentAttack equipmentAttack, EquipmentDefence equipmentDefence) {
+    public Player (String name, int life, int attack, String type, EquipmentAttack equipmentAttack, EquipmentDefence equipmentDefence) {
         this.name = name;
         this.life = life;
         this.attack = attack;
@@ -66,7 +70,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player{" +
+        return "character.Player{" +
                 "name='" + name + '\'' +
                 ", life=" + life +
                 ", attack=" + attack +
