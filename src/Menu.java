@@ -1,5 +1,9 @@
+import character.Player;
+import character.Warrior;
+import character.Wizzard;
 import equipment.EquipmentAttack;
 import equipment.EquipmentDefence;
+import exception.PersonnageHorsPlateauException;
 
 import java.util.Scanner;
 
@@ -68,8 +72,14 @@ public class Menu {
         }
     }
     private void startGame(){
-        while(!this.game.isFinished()){
+        try {
+        while(true){
+
+                game.isFinished();
             this.game.playTurn();
+        }
+        } catch (PersonnageHorsPlateauException e) {
+
         }
         // The game is finish we create a new one and return to the main menu
         this.game = new Game();
@@ -110,14 +120,14 @@ public class Menu {
                     correct = true;
                     EquipmentAttack sword = new EquipmentAttack("Training sword");
                     EquipmentDefence armor = new EquipmentDefence("Training armor");
-                    player = new Player(name,10,10,"warrior", sword, armor);
+                    player = new Warrior(name,10,10,"warrior", sword, armor);
 
                 }
                 case 2 -> {
                     correct = true;
                     EquipmentAttack spell = new EquipmentAttack("Spark");
                     EquipmentDefence armor = new EquipmentDefence("Cloak");
-                    player = new Player(name, 6,15,"wizzard",spell,armor);
+                    player = new Wizzard(name, 6,15,"wizzard",spell,armor);
 
                 }
                 default -> correct = false;

@@ -1,7 +1,10 @@
+import character.Player;
+import exception.PersonnageHorsPlateauException;
+
 /**
  * Hold details about the current game
  */
-public class Game {
+public class Game{
     public static final int NB_CASE = 64;
     private Player player;
     private Dice dice;
@@ -32,9 +35,12 @@ public class Game {
             System.out.printf("You move %d cases forward...",moves);
             System.out.println();
             this.playerPosition += moves;
-            if (this.isFinished()) {
-                System.out.println("You reach the end of the board");
-            } else {
+            try {
+                isFinished();
+                    System.out.println("You reach the end of the board");
+
+            } catch (PersonnageHorsPlateauException e) {
+
                 System.out.printf("You have reached cell %d", this.playerPosition + 1);
             }
         }
@@ -47,7 +53,9 @@ public class Game {
             this.player = null;
         }
 
-        public boolean isFinished () {
-            return this.playerPosition > NB_CASE;
+        public void isFinished () throws PersonnageHorsPlateauException {
+            if(this.playerPosition > NB_CASE){
+                throw new PersonnageHorsPlateauException();
+            }
         }
     }
