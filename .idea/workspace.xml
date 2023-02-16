@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6460e85-ac57-4150-b154-9d9bd61d0475" name="Changes" comment="iteration 3 avec exception">
+    <list default="true" id="c6460e85-ac57-4150-b154-9d9bd61d0475" name="Changes" comment="arret à la modélisation de mon code avec &quot;UML&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676559889821</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="arret à la modélisation de mon code avec &quot;UML&quot;">
+      <created>1676563072793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676563072793</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +137,8 @@
     <MESSAGE value="construction des personnages puis des équipements d'attak et defensif" />
     <MESSAGE value="construction des personnages types Equipements defense et attack choix des personnages update et delete" />
     <MESSAGE value="iteration 3 avec exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="iteration 3 avec exception" />
+    <MESSAGE value="arret à la modélisation de mon code avec &quot;UML&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="arret à la modélisation de mon code avec &quot;UML&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
