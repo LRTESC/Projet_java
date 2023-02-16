@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6460e85-ac57-4150-b154-9d9bd61d0475" name="Changes" comment="construction des personnages types Equipements defense et attack choix des personnages update et delete">
-      <change afterPath="$PROJECT_DIR$/src/Dice.java" afterDir="false" />
+    <list default="true" id="c6460e85-ac57-4150-b154-9d9bd61d0475" name="Changes" comment="avancer de mon pion de case en case">
+      <change afterPath="$PROJECT_DIR$/src/character/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/character/Wizzard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equipment/Philter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equipment/Shield.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equipment/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equipment/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exception/PersonnageHorsPlateauException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EquipmentAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/EquipmentAttack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EquipmentDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/EquipmentDefence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +82,9 @@
       <workItem from="1676361870967" duration="973000" />
       <workItem from="1676363378380" duration="18748000" />
       <workItem from="1676446876444" duration="7066000" />
-      <workItem from="1676458007090" duration="11399000" />
+      <workItem from="1676458007090" duration="13329000" />
+      <workItem from="1676533205497" duration="903000" />
+      <workItem from="1676536838726" duration="10995000" />
     </task>
     <task id="LOCAL-00001" summary="construction des personnages puis des équipements d'attak et defensif">
       <created>1676044083917</created>
@@ -109,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676391024113</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="avancer de mon pion de case en case">
+      <created>1676473951432</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676473951432</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +141,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="construction des personnages puis des équipements d'attak et defensif" />
     <MESSAGE value="construction des personnages types Equipements defense et attack choix des personnages update et delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="construction des personnages types Equipements defense et attack choix des personnages update et delete" />
+    <MESSAGE value="avancer de mon pion de case en case" />
+    <option name="LAST_COMMIT_MESSAGE" value="avancer de mon pion de case en case" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
