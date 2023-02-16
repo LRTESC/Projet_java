@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6460e85-ac57-4150-b154-9d9bd61d0475" name="Changes" comment="construction des personnages types Equipements defense et attack choix des personnages update et delete">
-      <change afterPath="$PROJECT_DIR$/src/character/Warrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/character/Wizzard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Philter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Shield.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Spell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Weapon.java" afterDir="false" />
+    <list default="true" id="c6460e85-ac57-4150-b154-9d9bd61d0475" name="Changes" comment="iteration 3 avec exception">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/EquipmentAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/EquipmentAttack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/EquipmentDefence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/EquipmentDefence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/laurent/IdeaProjects/projet_java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/laurent/IdeaProjects/projet_java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -113,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676391024113</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="iteration 3 avec exception">
+      <created>1676559889821</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676559889821</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="construction des personnages puis des équipements d'attak et defensif" />
     <MESSAGE value="construction des personnages types Equipements defense et attack choix des personnages update et delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="construction des personnages types Equipements defense et attack choix des personnages update et delete" />
+    <MESSAGE value="iteration 3 avec exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="iteration 3 avec exception" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
