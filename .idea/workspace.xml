@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6460e85-ac57-4150-b154-9d9bd61d0475" name="Changes" comment="arret à la modélisation de mon code avec &quot;UML&quot;">
+      <change afterPath="$PROJECT_DIR$/src/Board/Case.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Board/EmptyCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Board/EnemyCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Board/Gun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Board/Plateau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Board/PotionCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +38,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/laurent/IdeaProjects/projet_java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/laurent/IdeaProjects/projet_java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="equipment" />
+      <recent name="tray" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -73,6 +86,7 @@
       <workItem from="1676363378380" duration="18748000" />
       <workItem from="1676446876444" duration="7066000" />
       <workItem from="1676458007090" duration="11399000" />
+      <workItem from="1676621002047" duration="20388000" />
     </task>
     <task id="LOCAL-00001" summary="construction des personnages puis des équipements d'attak et defensif">
       <created>1676044083917</created>
@@ -116,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676563072793</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="arret à la modélisation de mon code avec &quot;UML&quot;">
+      <created>1676563087844</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676563087844</updated>
+    </task>
+    <task id="LOCAL-00008" summary="arret à la modélisation de mon code avec &quot;UML&quot;">
+      <created>1676563219447</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676563219447</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

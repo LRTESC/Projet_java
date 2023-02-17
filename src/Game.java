@@ -1,4 +1,6 @@
+import Board.Case;
 import character.Player;
+import Board.Plateau;
 
 /**
  * Hold details about the current game
@@ -7,14 +9,14 @@ public class Game {
     public static final int NB_CASE = 64;
     private Player player;
     private Dice dice;
-    private int playerPosition;
+
+    private Plateau plateau;
+
     public Game() {
         this.player = null;
-        this.playerPosition = 0;
         this.dice = new Dice();
+        this.plateau = new Plateau();
     }
-
-
     public Player getPlayer() {
        return player;
     }
@@ -31,15 +33,18 @@ public class Game {
             System.out.println("you launch the dice...");
             int moves = this.dice.throwDice();
             // and advance is player accordingly
-            System.out.printf("You move %d cases forward...",moves);
+            System.out.printf("You move throwdice cases forward...",moves);
             System.out.println();
-            this.playerPosition += moves;
+            this.plateau.setPositionPlayer(plateau.getPositionPlayer() + moves);
+
             if (this.isFinished()) {
                 System.out.println("You reach the end of the board");
             } else {
-                System.out.printf("You have reached cell %d", this.playerPosition + 1);
+                this.plateau.getCurrentCase().start();
+                System.out.printf("You have reached cell %d", this.plateau.getPositionPlayer() + 1);
             }
         }
+
 
         public boolean hasPlayer() {
             return this.player != null;
@@ -50,6 +55,6 @@ public class Game {
         }
 
         public boolean isFinished () {
-            return this.playerPosition > NB_CASE;
+            return this.plateau.getPositionPlayer() > 64;
         }
     }
