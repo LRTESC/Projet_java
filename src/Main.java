@@ -1,6 +1,3 @@
-import equipment.EquipmentAttack;
-import equipment.EquipmentDefence;
-
 import java.util.Random;
 import java.util.Scanner;
 public class Main {
@@ -11,7 +8,5 @@ public class Main {
         menu.run();
         Random rand = new Random();
         int res = rand.nextInt(1,7);
-        EquipmentDefence defence = new EquipmentDefence("shield");
-        EquipmentAttack attack = new EquipmentAttack("weapon");
     }
 }

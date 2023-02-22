@@ -1,4 +1,5 @@
 import Board.Case;
+import Board.ItemsCase;
 import character.Player;
 import Board.Plateau;
 
@@ -36,11 +37,10 @@ public class Game {
             System.out.printf("You move throwdice cases forward...",moves);
             System.out.println();
             this.plateau.setPositionPlayer(plateau.getPositionPlayer() + moves);
-
             if (this.isFinished()) {
                 System.out.println("You reach the end of the board");
             } else {
-                this.plateau.getCurrentCase().start();
+                this.plateau.getCurrentCase().start(player);
                 System.out.printf("You have reached cell %d", this.plateau.getPositionPlayer() + 1);
             }
         }
@@ -55,6 +55,6 @@ public class Game {
         }
 
         public boolean isFinished () {
-            return this.plateau.getPositionPlayer() > 64;
+            return this.plateau.getPositionPlayer() >= 64;
         }
     }

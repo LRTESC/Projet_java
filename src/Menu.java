@@ -1,8 +1,6 @@
 import character.Player;
 import character.Warrior;
-import character.Wizzard;
-import equipment.EquipmentAttack;
-import equipment.EquipmentDefence;
+import character.Wizard;
 
 import java.util.Scanner;
 
@@ -59,7 +57,7 @@ public class Menu {
                     // We check that there's already a player defined
                     // FIXME we should check if the game is ready to start(delegate that responsibility to the game object)
                     if (this.game.hasPlayer()){
-                        // The we run the game
+                        // The, we run the game
                         this.game.run();
                         // Then we run the game
                         this.startGame();
@@ -111,16 +109,12 @@ public class Menu {
             switch (choice) {
                 case 1 -> {
                     correct = true;
-                    EquipmentAttack sword = new EquipmentAttack("Training sword");
-                    EquipmentDefence armor = new EquipmentDefence("Training armor");
-                    player = new Warrior(name,10,10,"warrior", sword, armor);
+                    player = new Warrior(name,"warrior");
 
                 }
                 case 2 -> {
                     correct = true;
-                    EquipmentAttack spell = new EquipmentAttack("Spark");
-                    EquipmentDefence armor = new EquipmentDefence("Cloak");
-                    player = new Wizzard(name, 6,15,"wizzard",spell,armor);
+                    player = new Wizard(name,"wizard");
 
                 }
                 default -> correct = false;

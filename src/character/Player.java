@@ -1,9 +1,9 @@
 package character;
 
-import equipment.EquipmentAttack;
-import equipment.EquipmentDefence;
+import Board.PotionCase;
 
 import java.util.Objects;
+
 
 /**
  * déclaration de abstract class player donc je dois changer mes player
@@ -17,24 +17,22 @@ public abstract class Player {
     private int life;
     private int attack;
     private String type;
-    private EquipmentAttack equipmentAttack;
-    private EquipmentDefence equipmentDefence;
+
 
     /**
      * Create a new player using given parameters
      *
      * @param name of the player
-     * @param equipmentAttack
-     * @param equipmentDefence
      */
-    public Player (String name, int life, int attack, String type, EquipmentAttack equipmentAttack, EquipmentDefence equipmentDefence) {
+    public Player (String name, int life, int attack, String type) {
         this.name = name;
         this.life = life;
         this.attack = attack;
         this.type = type;
-        this.equipmentAttack = equipmentAttack;
-        this.equipmentDefence = equipmentDefence;
+
+
     }
+
 
     public String getName() {
         return name;
