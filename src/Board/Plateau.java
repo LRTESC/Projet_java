@@ -1,5 +1,8 @@
 package Board;
-
+import character.Player;
+import character.enemy.Dragon;
+import character.enemy.Gobelin;
+import character.enemy.Sorcerer;
 import equipment.*;
 
 public class Plateau {
@@ -30,6 +33,15 @@ public class Plateau {
                 }
                 case 35, 37, 43, 55 -> {
                     this.cases[i] = new BigLifePotion();
+                }
+                case 7, 22, 33, 50, 56 -> {
+                    this.cases[i] = new Sorcerer();
+                }
+                case 15, 24, 45, 52, 60 -> {
+                    this.cases[i] = new Gobelin();
+                }
+                case 14, 23, 40, 51, 54 -> {
+                    this.cases[i] = new Dragon();
                 }
                 default -> {
                     this.cases[i] = new EmptyCase();

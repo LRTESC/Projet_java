@@ -4,37 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="arret à la modélisation de mon code avec &quot;UML&quot;">
-      <change afterPath="$PROJECT_DIR$/src/Board/ItemsCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/character/Wizard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/BigLifePotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Club.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/FireBall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Gun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/LifePotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Lightining.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Sword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions">
+      <change afterPath="$PROJECT_DIR$/src/character/enemy/Dragon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/character/enemy/Gobelin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/character/enemy/Sorcerer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/EmptyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/EmptyCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/EnemyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/EnemyCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/Gun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board/ItemsCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/ItemsCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Plateau.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/PotionCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/PotionCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/character/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/character/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/character/Wizzard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/EquipmentAttack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/EquipmentDefence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Philter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Shield.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Spell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Weapon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equipment/BigLifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/BigLifePotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equipment/LifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/LifePotion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/laurent/IdeaProjects/projet_java",
     "node.js.detected.package.eslint": "true",
@@ -114,7 +97,8 @@
       <workItem from="1676621002047" duration="20388000" />
       <workItem from="1676878730055" duration="25403000" />
       <workItem from="1676966434648" duration="20489000" />
-      <workItem from="1677051694939" duration="19052000" />
+      <workItem from="1677051694939" duration="21486000" />
+      <workItem from="1677138425162" duration="24561000" />
     </task>
     <task id="LOCAL-00001" summary="construction des personnages puis des équipements d'attak et defensif">
       <created>1676044083917</created>
@@ -172,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676563219447</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions">
+      <created>1677079701807</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677079701807</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +185,8 @@
     <MESSAGE value="construction des personnages types Equipements defense et attack choix des personnages update et delete" />
     <MESSAGE value="iteration 3 avec exception" />
     <MESSAGE value="arret à la modélisation de mon code avec &quot;UML&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="arret à la modélisation de mon code avec &quot;UML&quot;" />
+    <MESSAGE value="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions" />
+    <option name="LAST_COMMIT_MESSAGE" value="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

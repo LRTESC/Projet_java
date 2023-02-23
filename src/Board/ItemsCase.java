@@ -24,15 +24,14 @@ public class ItemsCase extends Case {
 
     @Override
     public void start(Player player) {
-    }
+        }
 
-    public int getPointsAttack() {
-        return PointsAttack;
-    }
+        public int getPointsAttack () {
+            return PointsAttack;
+        }
 
-    public void setPointsAttack(int pointsAttack) {
-        PointsAttack = pointsAttack;
+        public void setPointsAttack ( int pointsAttack){
+            PointsAttack = pointsAttack;
+        }
     }
-}
-
 

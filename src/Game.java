@@ -45,7 +45,6 @@ public class Game {
             }
         }
 
-
         public boolean hasPlayer() {
             return this.player != null;
         }

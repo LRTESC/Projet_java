@@ -1,9 +1,6 @@
 package character;
-
 import Board.PotionCase;
-
 import java.util.Objects;
-
 
 /**
  * déclaration de abstract class player donc je dois changer mes player
@@ -29,10 +26,7 @@ public abstract class Player {
         this.life = life;
         this.attack = attack;
         this.type = type;
-
-
     }
-
 
     public String getName() {
         return name;
