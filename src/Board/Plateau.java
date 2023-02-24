@@ -1,5 +1,4 @@
 package Board;
-import character.Player;
 import character.enemy.Dragon;
 import character.enemy.Gobelin;
 import character.enemy.Sorcerer;
@@ -17,16 +16,17 @@ public class Plateau {
                     this.cases[i] = new EnemyCase();
                 }
                 case 3, 18, 28, 38 -> {
-                    this.cases[i] = new Sword();
+                    Items items = new Sword();
+                    this.cases[i] = new ItemsCase(items);
                 }
                 case 48, 58, 61 -> {
-                    this.cases[i] = new Club();
+                    this.cases[i] = new ItemsCase(new Club());
                 }
                 case 1, 47, 57, 20, 30 -> {
-                    this.cases[i] = new Lightining();
+                    this.cases[i] = new ItemsCase(new Lightining());
                 }
                 case 5, 10, 31, 39, 49, 63 -> {
-                    this.cases[i] = new FireBall();
+                    this.cases[i] = new ItemsCase(new FireBall());
                 }
                 case 6, 13, 17, 21, 27 -> {
                     this.cases[i] = new LifePotion();

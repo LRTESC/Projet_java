@@ -1,5 +1,6 @@
 package character;
-import Board.PotionCase;
+import Board.Items;
+
 import java.util.Objects;
 
 /**
@@ -14,6 +15,7 @@ public abstract class Player {
     private int life;
     private int attack;
     private String type;
+    private Items items;
 
 
     /**
@@ -26,6 +28,7 @@ public abstract class Player {
         this.life = life;
         this.attack = attack;
         this.type = type;
+
     }
 
     public String getName() {

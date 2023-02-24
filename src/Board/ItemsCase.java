@@ -1,13 +1,9 @@
 package Board;
 import character.Player;
-import character.Warrior;
-import character.Wizard;
 
 public class ItemsCase extends Case {
 
-
-    private int PointsAttack;
-
+    private Items items;
     /**
      * Definit un constructeur pour la classe ItemsCase qui prends un parametre de type entier appelé "pointsAttack"
      * Lorsqu'un objet de la classe "ItemsCase" est créé en appelant ce constructeur, la valeur passée en argument
@@ -18,20 +14,19 @@ public class ItemsCase extends Case {
      * @param pointsAttack
      */
 
-    public ItemsCase(int pointsAttack) {
-        PointsAttack = pointsAttack;
+    public ItemsCase(Items items) {
+        this.items = items;
+    }
+
+    public Items getItems() {
+        return items;
+    }
+
+    public void setItems(Items items) {
+        this.items = items;
     }
 
     @Override
     public void start(Player player) {
-        }
-
-        public int getPointsAttack () {
-            return PointsAttack;
-        }
-
-        public void setPointsAttack ( int pointsAttack){
-            PointsAttack = pointsAttack;
-        }
     }
-
+}

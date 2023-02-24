@@ -1,10 +1,11 @@
 package equipment;
+import Board.Items;
 import Board.ItemsCase;
 import character.Player;
 import character.Warrior;
 import character.Wizard;
 
-public class Sort extends ItemsCase {
+public class Sort extends Items {
 
 
     /**
@@ -21,7 +22,7 @@ public class Sort extends ItemsCase {
     }
 
     @Override
-    public void start(Player player) {
+    public void equip(Player player) {
         System.out.println("Great Sort");
             if (player instanceof Wizard) {
                 int attackValue = player.getAttack() + getPointsAttack();

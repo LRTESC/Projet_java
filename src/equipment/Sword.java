@@ -8,8 +8,8 @@ public class Sword extends Gun {
     }
 
     @Override
-    public void start(Player player) {
-        super.start(player);
+    public void equip (Player player) {
+        super.equip(player);
     }
 }
 

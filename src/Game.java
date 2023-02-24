@@ -44,14 +44,15 @@ public class Game {
                 System.out.printf("You have reached cell %d \n", this.plateau.getPositionPlayer() + 1);
             }
         }
+
         public boolean gameOver(){
             if(this.player.getLife() < 1){
                 System.out.println("Game Over");
                 return true;
             }
                 return false;
-
         }
+
         public boolean hasPlayer() {
             return this.player != null;
         }

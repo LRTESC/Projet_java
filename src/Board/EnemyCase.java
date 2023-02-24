@@ -1,7 +1,4 @@
 package Board;
-import character.enemy.Sorcerer;
-import character.enemy.Gobelin;
-import character.enemy.Dragon;
 import character.Player;
 
 public class EnemyCase extends Case {
@@ -9,9 +6,9 @@ public class EnemyCase extends Case {
     private int life;
     private int attack;
 
-    public EnemyCase() {
-
+    public EnemyCase(){
     }
+
     public EnemyCase(int life, int attack) {
         this.life = life;
         this.attack = attack;

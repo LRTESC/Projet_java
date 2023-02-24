@@ -1,15 +1,14 @@
 package equipment;
 import Board.ItemsCase;
 import character.Player;
-import character.Warrior;
 
-public class Club extends ItemsCase {
+public class Club extends Gun {
     public Club () {
-        super(3);
+        super(2);
     }
 
     @Override
-    public void start(Player player) {
-       super.start(player);
+    public void equip(Player player) {
+       super.equip(player);
     }
 }

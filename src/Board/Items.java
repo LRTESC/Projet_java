@@ -1,11 +1,13 @@
-package equipment;
+package Board;
 import character.Player;
+import character.Warrior;
+import character.Wizard;
 
 
-public class Lightining extends Sort {
-    public Lightining () {
-        super(2);
+public abstract class Items{
+    public Items() {
     }
+    private int PointsAttack;
 
     /**
      * Definit un constructeur pour la classe ItemsCase qui prends un parametre de type entier appelé "pointsAttack"
@@ -16,7 +18,19 @@ public class Lightining extends Sort {
      *
      * @param pointsAttack
      */
-    public void start(Player player) {
-        super.equip(player);
+
+
+    public Items(int pointsAttack) {
+        PointsAttack = pointsAttack;
+    }
+
+    public int getPointsAttack () {
+        return PointsAttack;
+    }
+    public abstract void equip(Player player);
+
+    public void setPointsAttack ( int pointsAttack){
+        PointsAttack = pointsAttack;
     }
 }
+

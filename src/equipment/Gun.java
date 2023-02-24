@@ -1,9 +1,10 @@
 package equipment;
+import Board.Items;
 import Board.ItemsCase;
 import character.Player;
 import character.Warrior;
 
-public abstract class Gun extends ItemsCase {
+public abstract class Gun extends Items {
 
     /**
      * Definit un constructeur pour la classe ItemsCase qui prends un parametre de type entier appelé "pointsAttack"
@@ -26,9 +27,8 @@ public abstract class Gun extends ItemsCase {
      * une valeur spécifiée pour les points d'attaque
      */
 
-
     @Override
-    public void start(Player player) {
+    public void equip(Player player) {
         if (player instanceof Warrior) {
             int attackValue = player.getAttack() + getPointsAttack();
             player.setAttack(attackValue);

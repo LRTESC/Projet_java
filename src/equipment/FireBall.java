@@ -16,7 +16,7 @@ public class FireBall extends Sort {
      *
      * @param pointsAttack
      */
-    public void start(Player player) {
-        super.start(player);
+    public void equip(Player player) {
+        super.equip(player);
     }
 }

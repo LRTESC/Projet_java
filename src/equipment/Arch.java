@@ -1,12 +1,8 @@
 package equipment;
-import character.Player;
 
+import character.enemy.Dragon;
 
-public class Lightining extends Sort {
-    public Lightining () {
-        super(2);
-    }
-
+public class Arch extends Gun{
     /**
      * Definit un constructeur pour la classe ItemsCase qui prends un parametre de type entier appelé "pointsAttack"
      * Lorsqu'un objet de la classe "ItemsCase" est créé en appelant ce constructeur, la valeur passée en argument
@@ -16,7 +12,8 @@ public class Lightining extends Sort {
      *
      * @param pointsAttack
      */
-    public void start(Player player) {
-        super.equip(player);
+    public Arch(int pointsAttack) {
+        super(pointsAttack);
     }
+
 }
