@@ -4,7 +4,7 @@ import character.Player;
 
 public class Gobelin extends EnemyCase {
     public Gobelin() {
-        super(6,1);
+        super(50,11);
     }
     public void start(Player player) {
         super.start(player);

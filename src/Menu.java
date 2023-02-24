@@ -9,6 +9,7 @@ public class Menu {
     private  Scanner scanner;
     private boolean exit;
 
+
     public Menu(Game game, Scanner scanner) {
         this.game = game;
         this.scanner = scanner;
@@ -69,7 +70,7 @@ public class Menu {
         }
     }
     private void startGame(){
-        while(!this.game.isFinished()){
+        while(!this.game.isFinished() && !this.game.gameOver()){
             this.game.playTurn();
         }
         // The game is finish we create a new one and return to the main menu

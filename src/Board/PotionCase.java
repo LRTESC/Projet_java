@@ -16,8 +16,7 @@ public abstract class PotionCase extends Case {
         System.out.println("Let's get back on track");
         int lifeValue = player.getLife() + lifePoints;
         player.setLife(lifeValue);
-        System.out.println("Great potion");
-        System.out.println("you found potion ");
+        System.out.println("You have so much life " + lifePoints +" I am left with : ");
     }
 
     public int getLifePoints() {

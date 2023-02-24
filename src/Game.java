@@ -37,14 +37,21 @@ public class Game {
             System.out.printf("You move throwdice cases forward...",moves);
             System.out.println();
             this.plateau.setPositionPlayer(plateau.getPositionPlayer() + moves);
-            if (this.isFinished()) {
+            if (this.isFinished()){
                 System.out.println("You reach the end of the board");
             } else {
                 this.plateau.getCurrentCase().start(player);
-                System.out.printf("You have reached cell %d", this.plateau.getPositionPlayer() + 1);
+                System.out.printf("You have reached cell %d \n", this.plateau.getPositionPlayer() + 1);
             }
         }
+        public boolean gameOver(){
+            if(this.player.getLife() < 1){
+                System.out.println("Game Over");
+                return true;
+            }
+                return false;
 
+        }
         public boolean hasPlayer() {
             return this.player != null;
         }

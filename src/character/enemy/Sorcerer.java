@@ -4,7 +4,7 @@ import character.Player;
 
 public class Sorcerer extends EnemyCase {
     public Sorcerer(){
-        super(9,2);
+        super(50,12);
 
     }
     public void start(Player player) {

@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions">
-      <change afterPath="$PROJECT_DIR$/src/character/enemy/Dragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/character/enemy/Gobelin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/character/enemy/Sorcerer.java" afterDir="false" />
+    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="fin des caisses surprises --&gt; les ennemies jusqu'a la partie ou l'ennemie atteint 0, il meurt (à faire)...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/EnemyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/EnemyCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/ItemsCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/ItemsCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Plateau.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/PotionCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/PotionCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/character/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/BigLifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/BigLifePotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/LifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/LifePotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/Gobelin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/Gobelin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/Sorcerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/Sorcerer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/laurent/IdeaProjects/projet_java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/laurent/IdeaProjects/projet_java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Board" />
@@ -98,7 +93,8 @@
       <workItem from="1676878730055" duration="25403000" />
       <workItem from="1676966434648" duration="20489000" />
       <workItem from="1677051694939" duration="21486000" />
-      <workItem from="1677138425162" duration="24561000" />
+      <workItem from="1677138425162" duration="24758000" />
+      <workItem from="1677224627428" duration="7185000" />
     </task>
     <task id="LOCAL-00001" summary="construction des personnages puis des équipements d'attak et defensif">
       <created>1676044083917</created>
@@ -163,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677079701807</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fin des caisses surprises --&gt; les ennemies jusqu'a la partie ou l'ennemie atteint 0, il meurt (à faire)...">
+      <created>1677168408038</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677168408038</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +189,8 @@
     <MESSAGE value="iteration 3 avec exception" />
     <MESSAGE value="arret à la modélisation de mon code avec &quot;UML&quot;" />
     <MESSAGE value="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions" />
-    <option name="LAST_COMMIT_MESSAGE" value="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions" />
+    <MESSAGE value="fin des caisses surprises --&gt; les ennemies jusqu'a la partie ou l'ennemie atteint 0, il meurt (à faire)..." />
+    <option name="LAST_COMMIT_MESSAGE" value="fin des caisses surprises --&gt; les ennemies jusqu'a la partie ou l'ennemie atteint 0, il meurt (à faire)..." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
