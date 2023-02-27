@@ -15,5 +15,4 @@ public class Arch extends Gun{
     public Arch(int pointsAttack) {
         super(pointsAttack);
     }
-
 }

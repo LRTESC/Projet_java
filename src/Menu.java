@@ -8,6 +8,8 @@ public class Menu {
     private  Game game;
     private  Scanner scanner;
     private boolean exit;
+    private Menu battle;
+    private Object player;
 
 
     public Menu(Game game, Scanner scanner) {

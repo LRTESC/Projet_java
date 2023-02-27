@@ -1,7 +1,5 @@
 package Board;
-import character.enemy.Dragon;
-import character.enemy.Gobelin;
-import character.enemy.Sorcerer;
+import character.enemy.*;
 import equipment.*;
 
 public class Plateau {
@@ -12,9 +10,6 @@ public class Plateau {
         this.PositionPlayer = 0;
         for (int i = 0; i < 64; i++) {
             switch (i) {
-                case 2, 4, 9, 19, 29, 44, 59, 62 -> {
-                    this.cases[i] = new EnemyCase();
-                }
                 case 3, 18, 28, 38 -> {
                     Items items = new Sword();
                     this.cases[i] = new ItemsCase(items);
@@ -35,13 +30,19 @@ public class Plateau {
                     this.cases[i] = new BigLifePotion();
                 }
                 case 7, 22, 33, 50, 56 -> {
-                    this.cases[i] = new Sorcerer();
+                    this.cases[i] = new EnemyCase(new Sorcerer());
                 }
                 case 15, 24, 45, 52, 60 -> {
-                    this.cases[i] = new Gobelin();
+                    this.cases[i] = new EnemyCase(new Gobelin());
                 }
                 case 14, 23, 40, 51, 54 -> {
-                    this.cases[i] = new Dragon();
+                    this.cases[i] = new EnemyCase(new Dragon());
+                }
+                case 2, 4, 9, 59-> {
+                    this.cases[i] = new EnemyCase(new Orcs());
+                }
+                case 19, 29, 44, 62-> {
+                    this.cases[i] = new EnemyCase(new BadSpirits());
                 }
                 default -> {
                     this.cases[i] = new EmptyCase();
@@ -49,7 +50,6 @@ public class Plateau {
             }
         }
     }
-
     public int getPositionPlayer() {
         return PositionPlayer;
     }

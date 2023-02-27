@@ -4,25 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="fin de la gestion des ennemies et du game over pour la fin de partie">
-      <change afterPath="$PROJECT_DIR$/src/Board/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/character/enemy/BadSpirits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/character/enemy/Orcs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Arch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Invisibility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Thunder.java" afterDir="false" />
+    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="version avancée du jeu partie équipement suplémentaires">
+      <change afterPath="$PROJECT_DIR$/src/character/enemy/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equipment/fight/Battle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equipment/fight/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/EnemyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/EnemyCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Items.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/ItemsCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/ItemsCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Plateau.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/character/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Club.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Club.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/FireBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/FireBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/BadSpirits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/BadSpirits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/Gobelin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/Gobelin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/Orcs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/Orcs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/character/enemy/Sorcerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/enemy/Sorcerer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equipment/Arch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Arch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/equipment/Gun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Gun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Lightining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Lightining.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/equipment/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Sword.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LSUQEB8lkC34ksjxm3XMosyyX7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -70,10 +71,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="character.enemy" />
+      <recent name="equipment.fight" />
       <recent name="Board" />
       <recent name="equipment" />
       <recent name="character" />
-      <recent name="tray" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,7 +110,8 @@
       <workItem from="1676966434648" duration="20489000" />
       <workItem from="1677051694939" duration="21486000" />
       <workItem from="1677138425162" duration="24758000" />
-      <workItem from="1677224627428" duration="22396000" />
+      <workItem from="1677224627428" duration="23435000" />
+      <workItem from="1677483718726" duration="17333000" />
     </task>
     <task id="LOCAL-00001" summary="construction des personnages puis des équipements d'attak et defensif">
       <created>1676044083917</created>
@@ -187,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677233693274</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="version avancée du jeu partie équipement suplémentaires">
+      <created>1677253620257</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677253620257</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +222,8 @@
     <MESSAGE value="construction des caisses surprises &quot;armes&quot; &quot;sorts&quot;... restes les potions" />
     <MESSAGE value="fin des caisses surprises --&gt; les ennemies jusqu'a la partie ou l'ennemie atteint 0, il meurt (à faire)..." />
     <MESSAGE value="fin de la gestion des ennemies et du game over pour la fin de partie" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin de la gestion des ennemies et du game over pour la fin de partie" />
+    <MESSAGE value="version avancée du jeu partie équipement suplémentaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="version avancée du jeu partie équipement suplémentaires" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

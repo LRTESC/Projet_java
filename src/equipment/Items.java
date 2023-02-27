@@ -1,4 +1,4 @@
-package Board;
+package equipment;
 import character.Player;
 import character.Warrior;
 import character.Wizard;

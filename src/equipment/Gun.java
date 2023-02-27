@@ -1,6 +1,4 @@
 package equipment;
-import Board.Items;
-import Board.ItemsCase;
 import character.Player;
 import character.Warrior;
 

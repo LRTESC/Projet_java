@@ -1,6 +1,5 @@
 package character;
-import Board.Items;
-
+import equipment.Items;
 import java.util.Objects;
 
 /**
@@ -29,6 +28,13 @@ public abstract class Player {
         this.attack = attack;
         this.type = type;
 
+    }
+    public boolean isAlive(){
+        if(life > 0){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public String getName() {

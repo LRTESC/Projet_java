@@ -1,5 +1,6 @@
 package Board;
 import character.Player;
+import equipment.Items;
 
 public class ItemsCase extends Case {
 
