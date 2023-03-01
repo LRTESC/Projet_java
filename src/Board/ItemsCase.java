@@ -1,10 +1,10 @@
 package Board;
 import character.Player;
-import equipment.Items;
+import equipment.Item;
 
 public class ItemsCase extends Case {
 
-    private Items items;
+    private Item items;
     /**
      * Definit un constructeur pour la classe ItemsCase qui prends un parametre de type entier appelé "pointsAttack"
      * Lorsqu'un objet de la classe "ItemsCase" est créé en appelant ce constructeur, la valeur passée en argument
@@ -15,15 +15,15 @@ public class ItemsCase extends Case {
      * @param pointsAttack
      */
 
-    public ItemsCase(Items items) {
+    public ItemsCase(Item items) {
         this.items = items;
     }
 
-    public Items getItems() {
+    public Item getItems() {
         return items;
     }
 
-    public void setItems(Items items) {
+    public void setItems(Item items) {
         this.items = items;
     }
 

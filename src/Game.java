@@ -2,11 +2,11 @@ import Board.Case;
 import Board.ItemsCase;
 import character.Player;
 import Board.Plateau;
-import equipment.fight.Fight;
 
 /**
  * Hold details about the current game
  */
+
 public class Game {
     public static final int NB_CASE = 64;
     private Player player;
@@ -37,14 +37,14 @@ public class Game {
         System.out.println("you launch the dice...");
         int moves = this.dice.throwDice();
         // and advance is player accordingly
-        System.out.printf("You move throwdice cases forward...", moves);
-        System.out.println();
+        System.out.printf("You move %d \ncases forward...", moves);
         this.plateau.setPositionPlayer(plateau.getPositionPlayer() + moves);
+        System.out.printf("You have reached cell %d \n", this.plateau.getPositionPlayer() + 1);
         if (this.isFinished()) {
             System.out.println("You reach the end of the board");
         } else {
             this.plateau.getCurrentCase().start(player);
-            System.out.printf("You have reached cell %d \n", this.plateau.getPositionPlayer() + 1);
+
         }
     }
 

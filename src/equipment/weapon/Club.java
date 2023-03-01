@@ -1,8 +1,8 @@
-package equipment;
-import Board.ItemsCase;
+package equipment.weapon;
 import character.Player;
+import equipment.Weapon;
 
-public class Club extends Gun {
+public class Club extends Weapon {
     public Club () {
         super(2);
     }

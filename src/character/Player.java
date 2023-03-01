@@ -1,6 +1,7 @@
 package character;
-import equipment.Items;
-import java.util.Objects;
+import equipment.Item;
+import equipment.Weapon;
+import equipment.usable.Usable;
 
 /**
  * déclaration de abstract class player donc je dois changer mes player
@@ -12,9 +13,11 @@ public abstract class Player {
      */
     private String name;
     private int life;
-    private int attack;
-    private String type;
-    private Items items;
+
+    private Weapon weapon;
+
+    private Usable usable;
+
 
 
     /**
@@ -22,11 +25,12 @@ public abstract class Player {
      *
      * @param name of the player
      */
-    public Player (String name, int life, int attack, String type) {
+    public Player (String name, int life, Weapon armedujoueur) {
         this.name = name;
         this.life = life;
-        this.attack = attack;
-        this.type = type;
+        this.weapon = armedujoueur;
+
+
 
     }
     public boolean isAlive(){
@@ -35,6 +39,10 @@ public abstract class Player {
         } else {
             return false;
         }
+    }
+
+    public boolean backOff(int i) {
+        return false;
     }
 
     public String getName() {
@@ -53,20 +61,20 @@ public abstract class Player {
         this.life = life;
     }
 
-    public int getAttack() {
-        return attack;
+    public Weapon getWeapon() {
+        return weapon;
     }
 
-    public void setAttack(int attack) {
-        this.attack = attack;
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 
-    public String getType() {
-        return type;
+    public Usable getUsable() {
+        return usable;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setUsable(Usable usable) {
+        this.usable = usable;
     }
 
     @Override
@@ -74,21 +82,6 @@ public abstract class Player {
         return "character.Player{" +
                 "name='" + name + '\'' +
                 ", life=" + life +
-                ", attack=" + attack +
-                ", type='" + type + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Player player = (Player) o;
-        return life == player.life && attack == player.attack && Objects.equals(name, player.name) && Objects.equals(type, player.type);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, life, attack, type);
     }
 }

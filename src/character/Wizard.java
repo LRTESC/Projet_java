@@ -1,5 +1,7 @@
 package character;
 
+import equipment.weapon.FireBall;
+
 import java.util.Random;
 
 public class Wizard extends Player{
@@ -11,7 +13,7 @@ public class Wizard extends Player{
      * @param name             of the player
      * @param type
      */
-    public Wizard(String name, String type) {
-        super(name, random.nextInt(3,6), random.nextInt(8,15), type );
+    public Wizard(String name) {
+        super(name, random.nextInt(3,6), new FireBall());
     }
 }

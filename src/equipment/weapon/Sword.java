@@ -1,7 +1,8 @@
-package equipment;
+package equipment.weapon;
 import character.Player;
+import equipment.Weapon;
 
-public class Sword extends Gun {
+public class Sword extends Weapon {
 
     public Sword() {
         super(5);

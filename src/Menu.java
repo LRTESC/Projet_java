@@ -112,12 +112,12 @@ public class Menu {
             switch (choice) {
                 case 1 -> {
                     correct = true;
-                    player = new Warrior(name,"warrior");
+                    player = new Warrior(name);
 
                 }
                 case 2 -> {
                     correct = true;
-                    player = new Wizard(name,"wizard");
+                    player = new Wizard(name);
 
                 }
                 default -> correct = false;
