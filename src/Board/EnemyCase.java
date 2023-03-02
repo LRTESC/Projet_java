@@ -1,11 +1,9 @@
 package Board;
 import character.Player;
+import character.enemy.Dragon;
 import character.enemy.Enemy;
-import Board.Plateau;
-import character.enemy.Sorcerer;
 import equipment.Weapon;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class EnemyCase extends Case {
@@ -45,7 +43,8 @@ public class EnemyCase extends Case {
         Weapon armedujoueur = player.getWeapon();
         Enemy enemysurlacase = getEnemy();
         int vieDeEnemis = enemysurlacase.getLife();
-        int degatdelarme = armedujoueur.getPointsAttack();
+        int degatdelarme = armedujoueur.getPointsAttack(enemy);
+
         if(degatdelarme >= vieDeEnemis) {
             System.out.println("Enemy died --> to be continued ");
         } else {
@@ -80,6 +79,9 @@ public class EnemyCase extends Case {
     public void setEnemy(Enemy enemy) {
         this.enemy = enemy;
     }
+
+
+
 }
 
 

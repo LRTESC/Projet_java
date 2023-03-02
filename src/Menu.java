@@ -20,7 +20,7 @@ public class Menu {
 
     public void run() {
         while (!this.exit) {
-            System.out.println("Bonjour ! ");
+            System.out.println("Bonjour la team ! ");
             if (this.game.hasPlayer()) {
                 System.out.println("1 - Update player");
                 System.out.println("2 - Delete player");

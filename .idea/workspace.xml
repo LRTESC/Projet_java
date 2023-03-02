@@ -4,36 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="Nouvelles regles de combat">
-      <change afterPath="$PROJECT_DIR$/src/equipment/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/usable/Usable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/weapon/Bow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equipment/weapon/FireBall.java" afterDir="false" />
+    <list default="true" id="9b31be8a-e017-4345-8a1a-29d21406249e" name="Changes" comment="Refractor du code + nouvelles règles des combats fait">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Case.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/EnemyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/EnemyCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/ItemsCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/ItemsCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Plateau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/character/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/character/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/character/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Arch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/BigLifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/usable/BigLifePotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Club.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/weapon/Club.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/FireBall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Gun.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Invisibility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Items.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/LifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/usable/LifePotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Lightining.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Sort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/weapon/Sword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/Thunder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/fight/Battle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/equipment/fight/Fight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equipment/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equipment/usable/Usable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/usable/Usable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equipment/weapon/Bow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equipment/weapon/Bow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +101,8 @@
       <workItem from="1677224627428" duration="23435000" />
       <workItem from="1677483718726" duration="18637000" />
       <workItem from="1677570939031" duration="19398000" />
-      <workItem from="1677657363069" duration="21225000" />
+      <workItem from="1677657363069" duration="24378000" />
+      <workItem from="1677744046648" duration="10685000" />
     </task>
     <task id="LOCAL-00001" summary="construction des personnages puis des équipements d'attak et defensif">
       <created>1676044083917</created>
@@ -216,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677512480095</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refractor du code + nouvelles règles des combats fait">
+      <created>1677683591566</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677683591566</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +229,8 @@
     <MESSAGE value="fin de la gestion des ennemies et du game over pour la fin de partie" />
     <MESSAGE value="version avancée du jeu partie équipement suplémentaires" />
     <MESSAGE value="Nouvelles regles de combat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nouvelles regles de combat" />
+    <MESSAGE value="Refractor du code + nouvelles règles des combats fait" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refractor du code + nouvelles règles des combats fait" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

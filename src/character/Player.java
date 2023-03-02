@@ -34,7 +34,7 @@ public abstract class Player {
 
     }
     public boolean isAlive(){
-        if(life > 0){
+        if( life > 0 ){
             return true;
         } else {
             return false;

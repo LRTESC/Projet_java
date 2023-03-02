@@ -8,5 +8,4 @@ public abstract class Usable extends Item{
         public void equip(Player player) {
                 player.setUsable(this);
         }
-
-        }
+}
